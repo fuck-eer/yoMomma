@@ -25,7 +25,7 @@ class JokahhTray extends Tray {
 			console.log("here");
 			this.mainWindow.hide();
 		} else {
-			console.log("here2");
+			console.log(this.mainWindow.isVisible());
 			this.mainWindow.setBounds({
 				x: parseInt(x - width / 2),
 				y: isMac ? y : parseInt(y - height),
